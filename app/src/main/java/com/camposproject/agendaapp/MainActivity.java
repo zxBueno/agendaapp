@@ -12,13 +12,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
-
+import com.google.firebase.firestore.FirebaseFirestore; // Importar link com Firebase
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
+    FirebaseFirestore db = FirebaseFirestore.getInstance();
 public EditText codigo;
 public EditText data;
 public EditText descricao;
@@ -104,7 +105,7 @@ public Registro registro;
         if(this.resultadoVerificacao != true && this.converterData(this.data) != false){
           this.registro = new Registro(this.cod, this.assunt, this.dat, this.desc); // Cria o objeto registro
 
-            this.db.collection("/registro").add(registro).addOnSucessListener(
+            this.db.collection("/registro").add(this.registro).addOnSuccessListener(
                     documentReference -> {
                         Toast msg = Toast.makeText(getApplicationContext(), "Cadastrado com sucesso", Toast.LENGTH_SHORT);
                         msg.setGravity(Gravity.CENTER, 0, 50);

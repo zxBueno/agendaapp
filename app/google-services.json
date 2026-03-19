@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1017475322285",
+    "project_id": "agendaapp-c6528",
+    "storage_bucket": "agendaapp-c6528.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1017475322285:android:25179b4340e7ea94fad124",
+        "android_client_info": {
+          "package_name": "com.camposproject.agendaapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbJd1Vif8HxJ0z18llHtBffmTAD4qPtak"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
