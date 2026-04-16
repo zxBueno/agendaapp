@@ -2,7 +2,8 @@ package com.camposproject.agendaapp;
 
 import java.util.Date;
 
-public class Registro{
+public class
+Registro{
     private int codigo;
     private String assunto;
     private Date dataEvento;

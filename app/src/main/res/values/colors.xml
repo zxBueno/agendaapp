@@ -3,4 +3,5 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="botaoCancelelarAluno">#0084FF</color>
+    <color name="grey">#CCCCCC</color>
 </resources>
