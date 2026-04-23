@@ -49,6 +49,6 @@
             android:scaleType="centerInside"
             android:layout_width="40dp"
             android:layout_height="40dp"/>
-s
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
